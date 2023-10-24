@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * get_flags - extracts and calculates active formatting flags
+ * flags - extracts and calculates active formatting flags
  * @format: Formatted string in which to analyze the flags
- * @i: take a parameter.
- * Return: Flags:
+ * @i: position in the format string.
+ * Return: Active formatting flags
  */
-int get_flags(const char *format, int *i)
+int flags(const char *format, int *i)
 {
 	/* - + 0 # ' ' */
 	/* 1 2 4 8  16 */
